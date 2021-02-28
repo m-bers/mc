@@ -1,6 +1,8 @@
 version: '3.5'
 
 services:
+
+  # A hardcore world running on the vanilla server
   vanilla-hardcore:
     image: itzg/minecraft-server
     environment:
@@ -8,7 +10,18 @@ services:
       ONLINE_MODE: "FALSE"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./vanilla-hardcore:/data
+      - ./worlds/vanilla-hardcore:/data
+
+  # An easy world running on the Paper server
+  paper-easy:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      ONLINE_MODE: "FALSE"
+      TYPE: "PAPER"
+    volumes:
+      - ./worlds/paper-easy:/data
+
   bungeecord:
     image: itzg/bungeecord
     environment:
