@@ -1,12 +1,35 @@
-version: "3"
+version: '3.5'
 
 services:
   mc:
     image: itzg/minecraft-server
-    ports:
-      - 25565:25565
     environment:
       EULA: "TRUE"
+      ONLINE_MODE: "FALSE"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
+  bungeecord:
+    image: itzg/bungeecord
+    environment:
+      TYPE: "VELOCITY"
+      
+      # GeyserMC/Floodgate Plugins for Velocity
+      PLUGINS: "https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/velocity/target/Geyser-Velocity.jar, https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/velocity/target/floodgate-velocity.jar"
+    ports:
+      - 25565:25577
+      - 19132:19132/udp
+    volumes:
+      # Velocity config
+      - ./config/velocity.toml:/server/velocity.toml:ro
+
+      # GeyserMC config
+      - ./config/geyser.yml:/server/plugins/Geyser-Velocity/config.yml:ro
+
+      # Floodgate config
+      - ./config/floodgate.yml:/server/plugins/floodgate/config.yml:ro
+      - ./config/key.pem:/server/plugins/floodgate/key.pem:ro
+      - ./config/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
+      - ./config/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
+    links:
+      - mc
