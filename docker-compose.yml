@@ -2,6 +2,10 @@ version: '3.5'
 
 services:
 
+#########################
+### Minecraft servers ###
+#########################
+
   # A hardcore world running on the vanilla server
   vanilla-hardcore:
     image: itzg/minecraft-server
@@ -12,15 +16,28 @@ services:
       # attach the relative directory 'data' to the container's /data path
       - ./worlds/vanilla-hardcore:/data
 
-  # An easy world running on the Paper server
-  paper-easy:
+  # An lobby world running on the Paper server
+  paper-lobby:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
       TYPE: "PAPER"
     volumes:
-      - ./worlds/paper-easy:/data
+      - ./worlds/paper-lobby:/data
+
+  paper-skyblock:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      ONLINE_MODE: "FALSE"
+      TYPE: "PAPER"
+    volumes:
+      - ./worlds/paper-skyblock:/data      
+
+#######################
+### Minecraft proxy ###
+#######################
 
   bungeecord:
     image: itzg/bungeecord

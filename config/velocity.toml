@@ -55,17 +55,18 @@ ping-passthrough = "DISABLED"
 [servers]
 	# Configure your servers here. Each key represents the server's name, and the value
 	# represents the IP address of the server to connect to.
+	paper-lobby = "paper-lobby:25565"
 	vanilla-hardcore = "vanilla-hardcore:25565"
-	paper-easy = "paper-easy:25565"
+	paper-skyblock = "paper-skyblock:25565"
+
 	# In what order we should try servers when a player logs in or is kicked from aserver.
-	try = ["paper-easy"]
-	factions = "127.0.0.1:30067"
+	try = ["paper-lobby"]
 
 [forced-hosts]
-	"paper-easy.mbe.rs" = ["paper-easy"]
+	"paper-lobby.mbe.rs" = ["paper-lobby"]
 	# Configure your forced hosts here.
 	"vanilla-hardcore.mbe.rs" = ["vanilla-hardcore"]
-	"factions.example.com" = ["factions"]
+	"paper-skyblock.mbe.rs" = ["paper-skyblock"]
 
 [advanced]
 	# Specify a custom timeout for connection timeouts here. The default is five seconds.
