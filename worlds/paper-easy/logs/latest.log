@@ -48,3 +48,21 @@
 [17:38:54] [Server thread/INFO]: *bzgrizzly[/192.168.16.4:51316] logged in with entity id 236 at ([world]344.162, 72.0, -18.137278)
 [17:39:10] [Server thread/INFO]: *bzgrizzly lost connection: Disconnected
 [17:39:10] [Server thread/INFO]: *bzgrizzly left the game
+[17:40:35] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[17:40:35] [Server thread/INFO]: [Rcon: Stopping the server]
+[17:40:35] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[17:40:35] [Server thread/INFO]: Stopping server
+[17:40:35] [Server thread/INFO]: Saving players
+[17:40:35] [Server thread/INFO]: Saving worlds
+[17:40:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:40:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:40:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:40:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:40:36] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:40:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:40:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:40:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:40:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:40:36] [Server thread/INFO]: Flushing Chunk IO
+[17:40:36] [Server thread/INFO]: Closing Thread Pool
+[17:40:36] [Server thread/INFO]: Closing Server
