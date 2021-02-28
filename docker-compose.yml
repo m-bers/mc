@@ -21,13 +21,13 @@ services:
       - 19132:19132/udp
     volumes:
       # Velocity config
-      - ./config/velocity.toml:/server/velocity.toml:ro
+      - ./config/velocity.toml:/server/velocity.toml
 
       # GeyserMC config
-      - ./config/geyser.yml:/server/plugins/Geyser-Velocity/config.yml:ro
+      - ./config/geyser.yml:/server/plugins/Geyser-Velocity/config.yml
 
       # Floodgate config
-      - ./config/floodgate.yml:/server/plugins/floodgate/config.yml:ro
+      - ./config/floodgate.yml:/server/plugins/floodgate/config.yml
       - ./config/key.pem:/server/plugins/floodgate/key.pem:ro
       - ./config/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
       - ./config/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
