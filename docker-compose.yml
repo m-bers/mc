@@ -1,14 +1,14 @@
 version: '3.5'
 
 services:
-  mc:
+  vanilla-hardcore:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./data:/data
+      - ./vanilla-hardcore:/data
   bungeecord:
     image: itzg/bungeecord
     environment:
@@ -28,8 +28,8 @@ services:
 
       # Floodgate config
       - ./config/floodgate.yml:/server/plugins/floodgate/config.yml
-      - ./config/key.pem:/server/plugins/floodgate/key.pem:ro
-      - ./config/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
-      - ./config/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
+      - ./secrets/key.pem:/server/plugins/floodgate/key.pem:ro
+      - ./secrets/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
+      - ./secrets/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
     links:
       - mc

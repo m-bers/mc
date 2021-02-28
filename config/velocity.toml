@@ -55,7 +55,7 @@ ping-passthrough = "DISABLED"
 [servers]
 	# Configure your servers here. Each key represents the server's name, and the value
 	# represents the IP address of the server to connect to.
-	lobby = "mc:25565"
+	lobby = "vanilla-hardcore:25565"
 	minigames = "127.0.0.1:30068"
 	# In what order we should try servers when a player logs in or is kicked from aserver.
 	try = ["lobby"]
@@ -64,7 +64,7 @@ ping-passthrough = "DISABLED"
 [forced-hosts]
 	"minigames.example.com" = ["minigames"]
 	# Configure your forced hosts here.
-	"mc.mbe.rs" = ["lobby"]
+	"vanilla-hardcore.mbe.rs" = ["lobby"]
 	"factions.example.com" = ["factions"]
 
 [advanced]
