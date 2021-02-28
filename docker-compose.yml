@@ -32,4 +32,4 @@ services:
       - ./secrets/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
       - ./secrets/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
     links:
-      - mc
+      - vanilla-hardcore
