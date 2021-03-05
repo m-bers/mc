@@ -6,34 +6,35 @@ services:
 ### Minecraft servers ###
 #########################
 
-  # A hardcore world running on the vanilla server
-  vanilla-hardcore:
+  # A hardcore world running on the Paper server
+  mc-hardcore:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
+      TYPE: "PAPER"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./worlds/vanilla-hardcore:/data
+      - ./worlds/hardcore:/data
 
   # An lobby world running on the Paper server
-  paper-lobby:
+  mc-lobby:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
       TYPE: "PAPER"
     volumes:
-      - ./worlds/paper-lobby:/data
+      - ./worlds/lobby:/data
 
-  paper-skyblock:
+  mc-skyblock:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       ONLINE_MODE: "FALSE"
       TYPE: "PAPER"
     volumes:
-      - ./worlds/paper-skyblock:/data      
+      - ./worlds/skyblock:/data      
 
 #######################
 ### Minecraft proxy ###
@@ -62,4 +63,6 @@ services:
       - ./secrets/public-key.pem:/server/plugins/floodgate/public-key.pem:ro
       - ./secrets/encrypted.txt:/server/plugins/floodgate/encrypted.txt:ro
     links:
-      - vanilla-hardcore
+      - mc-hardcore
+      - mc-lobby
+      - mc-skyblock

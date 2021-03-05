@@ -1,0 +1,23 @@
+[01:43:09] [User Authenticator #2/INFO]: UUID of player gandalfthegr4y is 2498226c-2797-3810-b5e0-18a153393980
+[01:43:09] [Server thread/INFO]: gandalfthegr4y joined the game
+[01:43:09] [Server thread/INFO]: gandalfthegr4y[/172.20.0.5:58454] logged in with entity id 343 at ([world]-9.5, 82.0, -29.5)
+[01:43:19] [Server thread/INFO]: gandalfthegr4y lost connection: Disconnected
+[01:43:19] [Server thread/INFO]: gandalfthegr4y left the game
+[01:45:37] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:45:37] [Server thread/INFO]: [Rcon: Stopping the server]
+[01:45:37] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:45:37] [Server thread/INFO]: Stopping server
+[01:45:37] [Server thread/INFO]: Saving players
+[01:45:38] [Server thread/INFO]: Saving worlds
+[01:45:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:45:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:45:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:45:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:45:38] [Server thread/INFO]: Flushing Chunk IO
+[01:45:38] [Server thread/INFO]: Closing Thread Pool
+[01:45:38] [Server thread/INFO]: Closing Server

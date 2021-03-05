@@ -1,0 +1,136 @@
+{
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2021-03-02 21:31:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_planks": {
+    "criteria": {
+      "has_logs": "2021-03-02 21:49:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-03-02 21:33:39 +0000"
+    },
+    "done": true
+  },
+  "skyblock:farmer/root": {
+    "criteria": {
+      "pumpkin_seeds": "2021-03-02 21:30:27 +0000"
+    },
+    "done": true
+  },
+  "skyblock:skyblock/cobblestone_generator": {
+    "criteria": {
+      "cobblestone": "2021-03-02 21:33:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-03-02 21:33:39 +0000"
+    },
+    "done": true
+  },
+  "skyblock:skyblock/01portal": {
+    "criteria": {
+      "nether": "2021-03-02 21:49:11 +0000"
+    },
+    "done": true
+  },
+  "skyblock:collector/root": {
+    "criteria": {
+      "log": "2021-03-02 21:30:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2021-03-02 21:31:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_reeds": "2021-03-02 21:30:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_stick": "2021-03-02 21:31:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_stick": "2021-03-02 21:31:02 +0000"
+    },
+    "done": true
+  },
+  "skyblock:skyblock/exploration": {
+    "criteria": {
+      "basalt_deltas": "2021-03-02 21:49:11 +0000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/warped_fungus_on_a_stick": {
+    "criteria": {
+      "has_warped_fungus": "2021-03-02 21:49:37 +0000"
+    },
+    "done": true
+  },
+  "skyblock:skyblock/root": {
+    "criteria": {
+      "dirt": "2021-03-02 21:49:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_oak_planks": "2021-03-02 21:31:44 +0000"
+    },
+    "done": true
+  },
+  "skyblock:collector/03cobblestone": {
+    "criteria": {
+      "cobblestone": "2021-03-02 21:42:56 +0000"
+    },
+    "done": true
+  },
+  "skyblock:skyblock/all_trees": {
+    "criteria": {
+      "oak": "2021-03-02 21:31:12 +0000",
+      "warped": "2021-03-02 21:49:37 +0000"
+    },
+    "done": false
+  },
+  "skyblock:skyblock/regrowth": {
+    "criteria": {
+      "sapling": "2021-03-02 21:31:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-03-02 21:33:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_hyphae": {
+    "criteria": {
+      "has_log": "2021-03-02 21:49:40 +0000"
+    },
+    "done": true
+  },
+  "skyblock:nether/root": {
+    "criteria": {
+      "nether": "2021-03-02 21:49:11 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2586
+}
